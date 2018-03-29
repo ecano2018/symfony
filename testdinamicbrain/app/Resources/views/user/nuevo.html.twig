@@ -1,0 +1,19 @@
+{# ... #}
+{# this tag only applies to the forms defined in this template #}
+{# añade esto al principio de tu plantilla #}
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+<h1>Formulario Contacto</h1>
+{{ form_start(form) }}
+{{ form_widget(form.recaptcha, { 'attr': {
+    'options' : {
+        'theme': 'light',
+        'type': 'image',
+        'size': 'normal'
+    },
+} }) }}
+{{ form_end(form) }} 
+{% endblock body %}

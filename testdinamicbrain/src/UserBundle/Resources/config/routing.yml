@@ -1,0 +1,7 @@
+user_homepage:
+    path:     /
+    defaults: { _controller: UserBundle:Default:index }
+
+nuevo_user:
+    path:     /nuevo
+    defaults: { _controller: UserBundle:Default:nuevo }
